@@ -9,7 +9,7 @@ body {
     margin: 0px auto;
 }
 
-#navigation {}
+
 
 #navForDesktop {
     display: flex;
@@ -84,7 +84,7 @@ nav ul {
     width: 60%;
 }
 
-#banner-second {}
+
 
 #curriculum {
     background-image: url('/assets/bg.png');

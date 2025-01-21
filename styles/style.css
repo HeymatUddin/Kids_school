@@ -1,0 +1,266 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Quicksand", serif;
+    padding: 0px;
+    margin: 0px auto;
+}
+
+#navigation {}
+
+#navForDesktop {
+    display: flex;
+    padding: 10px 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logoName {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#home {
+    color: orange;
+}
+
+#about {
+    color: #01ACFD;
+}
+
+#facilities {
+    color: #05D4DF;
+}
+
+#admission {
+    color: #5D58EF;
+}
+
+.commonButton {
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+#contact {
+    background-color: orange;
+    border: 1px solid red;
+}
+
+#navForMobile {
+    display: none;
+}
+
+.h1 {
+    font-size: 40px;
+}
+
+#banner {
+    padding: 0px 10%;
+    display: flex;
+    gap: 50px;
+    height: 80%;
+}
+
+#banner-first {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 5%;
+    width: 60%;
+}
+
+#banner-second {}
+
+#curriculum {
+    background-image: url('/assets/bg.png');
+    background-size: contain;
+    padding: 8% 10%;
+}
+
+#curriculum-container {
+    display: flex;
+    gap: 28px;
+}
+
+.curriculum-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px;
+    margin: 40px 0px;
+    border-radius: 10px;
+}
+
+.card-1 {
+    background-image: linear-gradient(#DEF5FF, rgb(255, 255, 255), white);
+}
+
+.card-2 {
+    background-image: linear-gradient(#FFF4DC, rgb(255, 255, 255), white);
+}
+
+.card-3 {
+    background-image: linear-gradient(#F2E8FF, rgb(255, 255, 255), white);
+}
+
+.next-previous {
+    text-align: center;
+    font-size: 40px;
+}
+.stories{
+    background-image: url('/assets/bg.png');
+    background-repeat: repeat;
+    background-image: linear-gradient(white,#deba7c);
+    padding: 0px 10%;
+    border: 1px solid red;
+}
+.story-container{
+    display: flex;
+    gap: 10px;
+}
+.story-first{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 50%;
+    background-color: white;
+}
+.story-first div{
+    padding: 20px;
+}
+.story-second{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 60%;
+}
+.card{
+    height: 50vh;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.card >div{
+    padding: 20px;
+}
+footer{
+    background-color: #000000;
+    padding: 0px 10%;
+    display: grid;
+    grid-template-columns:50%  repeat(2, 1fr);
+    padding: 50px 10%;
+    gap: 20px;
+}
+.foot1{
+    padding-right: 10px;
+}
+.foot2{
+     display: flex;
+     flex-direction: column;
+     gap:10px
+}
+.foot3{
+    text-align: center;
+}
+@media only screen and (max-width:768px) {
+    #navForMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+        border-bottom: 2px solid orange;
+    }
+
+    #favi {
+        font-size: 150%;
+    }
+
+    #navForDesktop {
+        display: none;
+    }
+
+    #banner {
+        flex-direction: column-reverse;
+        height: 60%;
+        gap: 10px;
+    }
+
+    #banner-first {
+        width: 100%;
+        align-items: center;
+    }
+
+    #banner-first div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #curriculum-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .curriculum-card {
+        margin:0px;
+    }
+    .next-previous {
+       display: none;
+    }
+
+
+    .stories{
+        background-image: url('/assets/bg.png');
+        background-size: contain;
+        background-image: linear-gradient(white,#deba7c);
+        padding: 0px 10%;
+        border: 1px solid red;
+    }
+    .story-container{
+        display: flex;
+        justify-content: center;
+    }
+    .story-first{
+        display: none;
+    }
+    .story-container .story-second{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10%;
+        gap: 50px;
+    }
+    .foot1{
+        padding-right: 10px;
+    }
+    .foot2{
+         display: flex;
+         flex-direction: column;
+         gap:10px
+    }
+    .foot3{
+        text-align:start ;
+    }
+}

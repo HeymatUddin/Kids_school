@@ -126,61 +126,78 @@ nav ul {
     text-align: center;
     font-size: 40px;
 }
-.stories{
+
+.stories {
     background-image: url('/assets/bg.png');
     background-repeat: repeat;
-    background-image: linear-gradient(white,#deba7c);
+    background-image: linear-gradient(white, #deba7c);
     padding: 0px 10%;
-    border: 1px solid red;
+    border: 1px solid white;
 }
-.story-container{
+
+.story-container {
     display: flex;
     gap: 10px;
 }
-.story-first{
-    border: 1px solid red;
+
+.story-first {
     border-radius: 10px;
     width: 50%;
     background-color: white;
 }
-.story-first div{
+
+.story-first div {
     padding: 20px;
 }
-.story-second{
+
+.story-second {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     width: 60%;
 }
-.card{
+
+.card {
     height: 50vh;
-    border: 1px solid red;
     background-color: white;
     border-radius: 10px;
     padding-bottom: 30px;
+    text-overflow: ellipsis;
 }
-.card >div{
+
+/* .card h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+.card>div {
     padding: 20px;
 }
-footer{
+
+footer {
     background-color: #000000;
     padding: 0px 10%;
     display: grid;
-    grid-template-columns:50%  repeat(2, 1fr);
+    grid-template-columns: 50% repeat(2, 1fr);
     padding: 50px 10%;
     gap: 20px;
 }
-.foot1{
+
+.foot1 {
     padding-right: 10px;
 }
-.foot2{
-     display: flex;
-     flex-direction: column;
-     gap:10px
+
+.foot2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
-.foot3{
+
+.foot3 {
     text-align: center;
 }
+
 @media only screen and (max-width:768px) {
     #navForMobile {
         display: flex;
@@ -219,48 +236,65 @@ footer{
         flex-direction: column;
         gap: 20px;
     }
+
     .curriculum-card {
-        margin:0px;
+        margin: 0px;
     }
+
     .next-previous {
-       display: none;
+        display: none;
     }
 
 
-    .stories{
+    .stories {
         background-image: url('/assets/bg.png');
         background-size: contain;
-        background-image: linear-gradient(white,#deba7c);
-        padding: 0px 10%;
-        border: 1px solid red;
+        background-image: linear-gradient(white, #deba7c);
+        padding: 0px 5%;
+        border: 1px solid white;
     }
-    .story-container{
+
+    .story-container {
         display: flex;
         justify-content: center;
     }
-    .story-first{
+
+    .story-first {
         display: none;
     }
-    .story-container .story-second{
+
+    .story-container .story-second {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
         padding: 50px 10%;
         gap: 50px;
     }
-    .foot1{
+
+    .foot1 {
         padding-right: 10px;
     }
-    .foot2{
-         display: flex;
-         flex-direction: column;
-         gap:10px
+
+    .foot2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
     }
-    .foot3{
-        text-align:start ;
+
+    .foot3 {
+        text-align: start;
+    }
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .spn {
+        font-size: 12px;
     }
 }
